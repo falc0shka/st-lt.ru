@@ -167,19 +167,25 @@
     height: auto;
   }
   .banner__text {
-    position: relative;
+    /* position: relative;
     width: auto;
     margin: 0 30px;
     gap: 20px;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0; */
+
+    position: absolute;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    width: 100% !important;
   }
   .banner-form {
     position: relative;
     width: auto;
-    margin: 50px 30px 10px 30px;
+    margin: 150px 30px 10px 30px;
     gap: 20px;
     top: 0;
     left: 0;
@@ -215,6 +221,14 @@
   .price {
     /* height: 900px; */
     padding: 50px 30px;
+  }
+  .price-card__image {
+    height: auto !important;
+    width: 100% !important;
+  }
+  .price-card__image img {
+    height: auto !important;
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 950px) {
@@ -292,21 +306,11 @@
     padding: 30px 0;
     height: auto;
   }
-  .banner__text {
-    position: relative;
-    width: auto;
-    margin: 0 10px 0 20px;
-    gap: 10px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
 
   .banner-form {
     position: relative;
     width: auto;
-    margin: 30px 15px 10px 15px;
+    margin: 200px 15px 10px 15px;
     gap: 20px;
     top: 0;
     left: 0;
