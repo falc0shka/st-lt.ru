@@ -1,0 +1,330 @@
+@media screen and (max-width: 1919px) {
+  .top,
+  .field__label,
+  .field-submit {
+    /* laptop/body semibold */
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 155%; /* 23.25px */
+    letter-spacing: 0.15px;
+  }
+
+  body {
+    /* laptop/body regular */
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 23.25px */
+    letter-spacing: 0.15px;
+  }
+  .field-agree {
+    /* laptop/body small regular  */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 18.6px */
+    letter-spacing: 0.12px;
+  }
+  .banner__description {
+    /* laptop/body large regular */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 24.8px */
+    letter-spacing: 0.16px;
+  }
+  h1 {
+    /* laptop/H1 */
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 48px */
+    letter-spacing: 0.4px;
+  }
+  h2 {
+    /* laptop/H2 */
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 37.2px */
+    letter-spacing: 0.31px;
+  }
+  h3 {
+    /* laptop/H3 */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 31.2px */
+    letter-spacing: 0.24px;
+  }
+
+  .top {
+    height: 70px;
+  }
+  .bannet {
+    height: 575px;
+  }
+  .banner__slider {
+  }
+  .banner__text {
+    position: absolute;
+    width: 555px;
+    top: 75px;
+    left: 150px;
+  }
+  .banner__form {
+    gap: 25px;
+    width: 360px;
+    top: 75px;
+    right: 150px;
+  }
+  .field__input {
+    height: 44px;
+  }
+
+  .price {
+    /* height: 900px; */
+    padding: 100px 150px;
+  }
+  .price__header {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .top,
+  .field__label,
+  .field-submit {
+    /* laptop/body semibold */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 155%; /* 21.7px */
+    letter-spacing: 0.14px;
+  }
+
+  body {
+    /* laptop/body regular */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 21.7px */
+    letter-spacing: 0.14px;
+  }
+  .field-agree {
+    /* laptop/body small regular  */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 18.6px */
+    letter-spacing: 0.12px;
+  }
+  .banner__description {
+    /* laptop/body large regular */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 24.8px */
+    letter-spacing: 0.16px;
+  }
+  h1 {
+    /* laptop/H1 */
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 43.2px */
+    letter-spacing: 0.36px;
+  }
+  h2 {
+    /* laptop/H2 */
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 33.6px */
+    letter-spacing: 0.28px;
+  }
+  h3 {
+    /* laptop/H3 */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.2px;
+  }
+  .top__location,
+  .top__menu {
+    display: none;
+  }
+  .top__separator2,
+  .hidden-menu-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner {
+    padding: 50px 0;
+    height: auto;
+  }
+  .banner__text {
+    position: relative;
+    width: auto;
+    margin: 0 30px;
+    gap: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .banner-form {
+    position: relative;
+    width: auto;
+    margin: 50px 30px 10px 30px;
+    gap: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .banner-form__inputs {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 13px;
+  }
+  .banner-form__inputs > * {
+    flex-grow: 1;
+  }
+  .banner-form__submit {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .banner__slider {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .banner__slider-nav {
+    display: none;
+  }
+
+  .price {
+    /* height: 900px; */
+    padding: 50px 30px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .banner__slider img {
+    height: 700px !important;
+    width: auto !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top,
+  .field__label,
+  .field-submit {
+    /* laptop/body semibold */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 155%; /* 21.7px */
+    letter-spacing: 0.14px;
+  }
+
+  body {
+    /* laptop/body regular */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 21.7px */
+    letter-spacing: 0.14px;
+  }
+  .field-agree {
+    /* laptop/body small regular  */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 18.6px */
+    letter-spacing: 0.12px;
+  }
+  .banner__description {
+    /* laptop/body large regular */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 21.7px */
+    letter-spacing: 0.14px;
+  }
+  h1 {
+    /* laptop/H1 */
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 31.2px */
+    letter-spacing: 0.26px;
+  }
+  h2 {
+    /* laptop/H2 */
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 26.4px */
+    letter-spacing: 0.22px;
+  }
+  h3 {
+    /* laptop/H3 */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.2px;
+  }
+  .top__location,
+  .top__phone {
+    display: none;
+  }
+  .banner {
+    padding: 30px 0;
+    height: auto;
+  }
+  .banner__text {
+    position: relative;
+    width: auto;
+    margin: 0 10px 0 20px;
+    gap: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .banner-form {
+    position: relative;
+    width: auto;
+    margin: 30px 15px 10px 15px;
+    gap: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .banner-form__inputs {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .banner-form__submit {
+    flex-direction: column;
+    gap: 13px;
+  }
+  .price {
+    /* height: 900px; */
+    padding: 30px 15px;
+  }
+}

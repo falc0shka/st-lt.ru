@@ -1,0 +1,461 @@
+/* FONTS */
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.ttf");
+}
+
+/* DEFAULTS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MAIN */
+
+body {
+  color: #999;
+  background-color: #fff;
+  /* desktop/body regular */
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155%; /* 24.8px */
+  letter-spacing: 0.16px;
+}
+h1 {
+  /* desktop/H1 */
+  font-family: Gilroy;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 64.8px */
+  letter-spacing: 0.54px;
+}
+h2 {
+  /* desktop/H2 */
+  font-family: Gilroy;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 50.4px */
+  letter-spacing: 0.42px;
+}
+h3 {
+  /* desktop/H3 */
+  font-family: Gilroy;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 41.6px */
+  letter-spacing: 0.32px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* TOP */
+
+.top {
+  background: #fff;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+
+  /* desktop/body semibold */
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 155%; /* 24.8px */
+  letter-spacing: 0.16px;
+}
+.top__left {
+  margin-left: 2%;
+  display: inline-flex;
+  align-items: center;
+  gap: 35px;
+}
+.top__right {
+  margin-right: 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+}
+.top__separator,
+.top__separator2 {
+  background: #e5e5e5;
+  width: 1px;
+  height: 100%;
+}
+.top__separator2,
+.hidden-menu-icon {
+  display: none;
+}
+.top-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.top-logo__image {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.top-logo__text {
+  height: 24.684px;
+}
+
+.top-logo__image > * {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(-50%);
+}
+
+.top-menu__list {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.top__location,
+.top__phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* BANNER */
+
+.banner {
+  width: 100%;
+  height: 770px;
+  opacity: 0.8999999761581421;
+  background: #f0f0f0;
+  position: relative;
+  overflow: hidden;
+}
+.banner__slider {
+  width: 100% !important;
+  position: absolute !important;
+  z-index: 0 !important;
+  top: 0;
+  left: 0;
+}
+.banner__slider img {
+  height: auto !important;
+  width: 100% !important;
+}
+.banner__slide {
+  position: relative;
+  width: 100%;
+}
+.banner__text {
+  position: absolute;
+  width: 745px;
+  top: 120px;
+  left: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+
+  color: #fff;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3), 2px 2px 2px rgba(0, 0, 0, 0.9);
+}
+.banner__title {
+}
+.banner__description {
+  /* desktop/body large regular */
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155%; /* 27.9px */
+  letter-spacing: 0.18px;
+}
+.banner-form {
+  position: absolute;
+  width: 490px;
+  top: 120px;
+  right: 200px;
+
+  display: flex;
+  padding: 35px 40px 40px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+
+  border-radius: 15px;
+  background: #fff;
+}
+.banner-form__main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  align-self: stretch;
+}
+.banner-form__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+.banner-form__title {
+}
+.banner-form__description {
+}
+
+.banner-form__inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  align-self: stretch;
+}
+.field__label {
+  /* desktop/body semibold */
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 155%; /* 24.8px */
+  letter-spacing: 0.16px;
+}
+.field__input {
+  display: flex;
+  height: 50px;
+  padding: 12.5px 20px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+
+  border-radius: 10px;
+  border: 1px solid var(--gray-line, #e5e5e5);
+  background: var(--gray-bg, #f8f9fb);
+}
+.field-agree {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  align-items: center;
+
+  /* desktop/body small regular  */
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155%; /* 21.7px */
+  letter-spacing: 0.14px;
+}
+
+.banner-form__submit {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.field-submit {
+  display: flex;
+  padding: 12.5px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  align-self: stretch;
+
+  border-radius: 10px;
+  background: #999;
+  cursor: pointer;
+
+  color: #fff;
+
+  /* desktop/body semibold */
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 155%; /* 24.8px */
+  letter-spacing: 0.16px;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.slider-nav > * {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+}
+
+.banner__slider-nav {
+  position: absolute;
+  width: fit-content;
+  bottom: 120px;
+  left: 200px;
+}
+
+/* PRICE */
+.price {
+  padding: 120px 200px;
+  height: auto;
+}
+.price__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 30px;
+}
+
+.price__cards {
+  /* display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+  overflow: hidden; */
+
+  /* width: 100% !important;
+  position: absolute !important;
+  z-index: 1 !important;
+  top: 0;
+  left: 0; */
+}
+
+.price-cards__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 340px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid var(--gray-line, #e5e5e5);
+  background: #fff;
+}
+
+.price-card__header {
+  background: #f0f0f0;
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+.price-card__image {
+  height: 100% !important;
+  width: auto !important;
+}
+.price-card__image img {
+  height: 100% !important;
+  width: auto !important;
+}
+.price-card__tags {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.tags {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+.tags__tag {
+  display: flex;
+  padding: 2px 8px;
+  align-items: flex-start;
+  gap: 10px;
+
+  border-radius: 5px;
+  background: #fff;
+}
+.price-card__title {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  /* desktop/H4 */
+  font-family: Gilroy;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 28.6px */
+  letter-spacing: 0.22px;
+
+  color: #fff;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3), 2px 2px 2px rgba(0, 0, 0, 0.9);
+}
+
+.price-card__body {
+  display: flex;
+  width: 100%;
+  padding: 25px 30px 30px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+.price-card__items {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.price-card__item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+.price-card__item:not(:last-child) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.price-card__buy {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.price-card__price {
+  /* desktop/H4 */
+  font-family: Gilroy;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 28.6px */
+  letter-spacing: 0.22px;
+}

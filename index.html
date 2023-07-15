@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>[[++site_name]]</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./lib/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./lib/owl/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./lib/owl/owl.theme.green.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/9.3.0/mmenu.min.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="/lib/owl/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/9.3.0/mmenu.min.js"></script>
+  </head>
+  <body>
+    <div class="top">
+      <div class="top__left">
+        <div class="top__logo top-logo">
+          <div class="top-logo__image">
+            <img src="./images/ellipse.svg" alt="" srcset="" />
+            <img src="./images/frame.svg" alt="" srcset="" />
+          </div>
+          <div class="top-logo__text">
+            <img src="./images/patriot.svg" alt="" srcset="" />
+          </div>
+        </div>
+        <div class="top__separator"></div>
+        <nav class="top__menu top-menu">
+          <ul class="top-menu__list">
+            <li class="top-menu__item">Усуги</li>
+            <li class="top-menu__item">Продукция</li>
+            <li class="top-menu__item">Проекты</li>
+            <li class="top-menu__item">Компания</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="top__right">
+        <div class="top__location">
+          <img src="./images/interface icon.svg" alt="" srcset="" />
+          [[+current_city]]
+        </div>
+        <div class="top__phone">
+          <img src="./images/interface icon2.svg" alt="" srcset="" />
+          [[+phone_number]]
+        </div>
+        <div class="top__separator2"></div>
+        <div class="hidden-menu-icon">
+          <a href="#menu"><img src="./images/hidden-menu.svg" alt="" srcset="" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="page">
+      <div class="banner">
+        <div class="banner__slider owl-1 owl-carousel">[[getImageList? &tvname=`slider` &tpl=`slider.main.tpl` ]]</div>
+
+        <form id="banner-form" class="banner__form banner-form" method="post" action="">
+          <div class="banner-form__main">
+            <div class="banner-form__text">
+              <h3 class="banner-form__title">Оставить заявку</h3>
+              <div class="banner-form__description">Заполните форму и мы свяжемся с вами, чтобы узнать детали вашего проекта.</div>
+            </div>
+            <div class="banner-form__inputs">
+              <div class="banner-form__field field">
+                <label for="banner-form__field-name" class="field__label">Имя*</label>
+                <input id="banner-form__field-name" name="banner-form__field-name" type="text" class="field__input" maxlength="50" minlength="2" required />
+              </div>
+              <div class="banner-form__field field">
+                <label for="banner-form__field-phone" class="field__label">Телефон*</label>
+                <input id="banner-form__field-phone" name="banner-form__field-phone" type="tel" class="field__input" maxlength="20" minlength="7" pattern="^\+?[1-9\(\)\-]+" placeholder="+7xxxxxxxxxx" required />
+              </div>
+            </div>
+          </div>
+          <div class="banner-form__submit">
+            <div class="banner-form__agree field-agree">
+              <input id="banner-form__agree" type="checkbox" class="field-agree__label" required />
+              <label for="banner-form__agree" class="field-agree__label">Я принимаю <u>условия передачи информации</u></label>
+            </div>
+            <button type="submit" class="banner-form__button field-submit">Связаться с нами</button>
+          </div>
+          <div id="banner-form__messages" class="banner-form__messages hidden"></div>
+        </form>
+        <div class="banner__slider-nav slider-nav">
+          <div class="banner__slider-left slider-nav__left">
+            <img src="./images/left_arrow.svg" alt="" srcset="" />
+          </div>
+          <div class="banner__slider-right slider-nav__right">
+            <img src="./images/right_arrow.svg" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+      <div class="price">
+        <div class="price__header">
+          <h2 class="price__title page-title">Тарифы</h2>
+          <div class="price__nav slider-nav">
+            <div class="price-nav__left slider-nav__left">
+              <img src="./images/left_arrow.svg" alt="" srcset="" />
+            </div>
+            <div class="price-nav__right slider-nav__right">
+              <img src="./images/right_arrow.svg" alt="" srcset="" />
+            </div>
+          </div>
+        </div>
+        <div class="price__cards price-cards owl-2 owl-carousel">[[!msProducts? &parents=`0` &tpl=`product.main.tpl` ]]</div>
+      </div>
+    </div>
+
+    <!-- Fire the carousel plugin -->
+    <script>
+      $(document).ready(function () {
+        var owl = $(".owl-1");
+        owl.owlCarousel({
+          loop: true,
+          items: 1,
+          lazyLoad: true,
+          margin: 0,
+          nav: false,
+          dots: false,
+          autoplay: true,
+          mouseDrag: false,
+          pullDrag: false,
+          touchDrag: false,
+        });
+        $(".banner__slider-right").click(function () {
+          owl.trigger("next.owl.carousel");
+        });
+        // Go to the previous item
+        $(".banner__slider-left").click(function () {
+          owl.trigger("prev.owl.carousel");
+        });
+
+        var owl2 = $(".owl-2");
+        owl2.owlCarousel({
+          loop: true,
+          margin: 30,
+          nav: false,
+          dots: true,
+          autoplay: false,
+          mouseDrag: false,
+          pullDrag: false,
+          touchDrag: false,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            768: {
+              items: 2,
+            },
+            1440: {
+              items: 4,
+            },
+          },
+        });
+        $(".price-nav__right").click(function () {
+          owl2.trigger("next.owl.carousel");
+        });
+        // Go to the previous item
+        $(".price-nav__left").click(function () {
+          owl2.trigger("prev.owl.carousel");
+        });
+      });
+    </script>
+
+    <!-- Fire the menu plugin -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        new Mmenu("#menu", {
+          slidingSubmenus: false,
+          offCanvas: {
+            position: "right",
+          },
+        });
+      });
+    </script>
+
+    <nav id="menu" class="hidden-menu">
+      <ul class="hidden-menu__list">
+        <li class="hidden-menu__item">
+          <span>Усуги</span>
+          <ul>
+            <li><a href="">Управление активами и инвестиции</a></li>
+            <li><a href="">Автоматизация бизнеса</a></li>
+            <li><a href="">Финансовый аудит</a></li>
+            <li><a href="">Юридическая практика</a></li>
+            <li><a href="">Лизинг</a></li>
+            <li><a href="">Информационная безопасность</a></li>
+          </ul>
+        </li>
+
+        <li class="hidden-menu__item">
+          <span>Продукция</span>
+          <ul>
+            <li><a href="">Управление активами и инвестиции</a></li>
+            <li><a href="">Автоматизация бизнеса</a></li>
+            <li><a href="">Финансовый аудит</a></li>
+            <li><a href="">Юридическая практика</a></li>
+            <li><a href="">Лизинг</a></li>
+            <li><a href="">Информационная безопасность</a></li>
+          </ul>
+        </li>
+
+        <li class="hidden-menu__item">
+          <span>Проекты</span>
+          <ul>
+            <li><a href="">Управление активами и инвестиции</a></li>
+            <li><a href="">Автоматизация бизнеса</a></li>
+            <li><a href="">Финансовый аудит</a></li>
+            <li><a href="">Юридическая практика</a></li>
+            <li><a href="">Лизинг</a></li>
+            <li><a href="">Информационная безопасность</a></li>
+          </ul>
+        </li>
+
+        <li class="hidden-menu__item">
+          <span>Компания</span>
+          <ul>
+            <li><a href="">Управление активами и инвестиции</a></li>
+            <li><a href="">Автоматизация бизнеса</a></li>
+            <li><a href="">Финансовый аудит</a></li>
+            <li><a href="">Юридическая практика</a></li>
+            <li><a href="">Лизинг</a></li>
+            <li><a href="">Информационная безопасность</a></li>
+          </ul>
+        </li>
+        <li class="hidden-menu__item"><span>Пресс-центр</span></li>
+        <li class="hidden-menu__item"><span>Контакты</span></li>
+      </ul>
+    </nav>
+
+    <script src="./js/mail.js"></script>
+  </body>
+</html>
