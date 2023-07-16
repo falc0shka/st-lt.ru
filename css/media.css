@@ -62,8 +62,7 @@
   .top {
     height: 70px;
   }
-  .bannet {
-    height: 575px;
+  .banner {
   }
   .banner__slider {
   }
@@ -163,8 +162,7 @@
   }
 
   .banner {
-    padding: 50px 0;
-    height: auto;
+    height: 600px;
   }
   .banner__text {
     /* position: relative;
@@ -183,14 +181,14 @@
     width: 100% !important;
   }
   .banner-form {
-    position: relative;
-    width: auto;
+    width: calc(100% - 60px);
+    bottom: 50px;
+    left: 30px;
+    right: 30px;
+    top: unset;
     margin: 150px 30px 10px 30px;
+    margin: 0;
     gap: 20px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
   }
 
   .banner-form__inputs {
@@ -207,11 +205,11 @@
   }
 
   .banner__slider {
-    position: relative;
+    /* position: relative;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0; */
     width: 100%;
   }
   .banner__slider-nav {
@@ -221,20 +219,6 @@
   .price {
     /* height: 900px; */
     padding: 50px 30px;
-  }
-  .price-card__image {
-    height: auto !important;
-    width: 100% !important;
-  }
-  .price-card__image img {
-    height: auto !important;
-    width: 100% !important;
-  }
-}
-@media screen and (max-width: 950px) {
-  .banner__slider img {
-    height: 700px !important;
-    width: auto !important;
   }
 }
 
@@ -303,19 +287,18 @@
     display: none;
   }
   .banner {
-    padding: 30px 0;
-    height: auto;
+    height: 700px;
   }
 
   .banner-form {
-    position: relative;
-    width: auto;
+    width: calc(100% - 60px);
+    bottom: 50px;
+    left: 30px;
+    right: 30px;
+    top: unset;
     margin: 200px 15px 10px 15px;
+    margin: 0;
     gap: 20px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
   }
 
   .banner-form__inputs {
@@ -330,5 +313,11 @@
   .price {
     /* height: 900px; */
     padding: 30px 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .banner {
+    height: 800px;
   }
 }
