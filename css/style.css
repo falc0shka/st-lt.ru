@@ -158,6 +158,13 @@ h3 {
 .owl-item {
   height: 100%;
 }
+.banner .owl-dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
 .banner__slider img {
   /* height: auto !important;
   width: 100% !important; */
